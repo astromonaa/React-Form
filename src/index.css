@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  background: url(./assets/fon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+  background-position-x: center;
+}
+
+.exit-btn {
+  width: 200px;
+  margin: 14% auto 0;
+  display: block;
+}
+
+@media (max-width: 550px) {
+  body {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 450px) {
+  body {
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,41 @@
+@keyframes showModal {
+  from {
+    transform: scale(0.5);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.modal-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: none;
+}
+.modal-content {
+  background-color: #fff;
+  padding: 15px 30px;
+  border-radius: 20px;
+}
+.modal-close {
+  text-align: right;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.show-modal {
+  display: flex;
+  .modal-content {
+    animation: showModal 0.3s ease forwards;
+  }
+}

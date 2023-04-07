@@ -1,0 +1,108 @@
+.form {
+  width: 516px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 86px 70px;
+  background: #ffffff;
+  box-shadow: -10px 7px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-top: 13%;
+}
+
+.input {
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  width: 100%;
+  padding: 4px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #989898;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 4px;
+  &[for="password"] {
+    margin-top: 20px;
+  }
+}
+.password-forgot {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #f6b52e;
+  text-align: right;
+  margin-top: 10px;
+  text-decoration: none;
+  margin-left: auto;
+}
+button {
+  width: 100%;
+  text-align: center;
+  padding: 9px 0;
+  margin-top: 42px;
+  background: #f2b705;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.error {
+  text-align: left;
+  width: 100%;
+  color: red;
+}
+
+@media(max-width: 900px) {
+  .form {
+    margin-top: 18%;
+  }
+}
+@media(max-width: 700px) {
+  .form {
+    margin-top: 23%;
+  }
+}
+@media(max-width: 600px) {
+  .form {
+    margin-top: 27%;
+  }
+}
+@media(max-width: 550px) {
+  .form {
+    width: auto;
+    padding: 20px 30px 50px;
+    img {
+      width: 200px;
+    }
+  }
+}
+
+@media(max-width: 450px) {
+  .form {
+    margin-top: 36%;
+  }
+}
+@media(max-width: 350px) {
+  .form {
+    margin-top: 36%;
+    padding-bottom: 26px;
+    img {
+      width: 163px;
+    }
+    label, .password-forgot {
+      font-size: 13px;
+    }
+    button {
+      font-size: 15px;
+    }
+  }
+}
