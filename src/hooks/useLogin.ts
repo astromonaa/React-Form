@@ -10,8 +10,8 @@ enum CODES {
 export function useLogin() {
   const [login, setLogin] = useState('')
   const [password, setPassword] = useState('')
-  const [errrLogin, setErrorLogin] = useState(false)
-  const [errrPassword, setErrorPassword] = useState(false)
+  const [errorLogin, setErrorLogin] = useState(false)
+  const [errorPassword, setErrorPassword] = useState(false)
 
   const navigate = useNavigate()
   const {setIsAuth, setResetingLogin} = useActions()
@@ -68,6 +68,6 @@ export function useLogin() {
   }
 
   return {
-    login, password, onLoginInput, onPasswordInput, onLogin, errrLogin, errrPassword
+    login, password, onLoginInput, onPasswordInput, onLogin, errorLogin, errorPassword
   }
 }
