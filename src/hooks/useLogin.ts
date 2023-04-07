@@ -68,6 +68,6 @@ export function useLogin() {
   }
 
   return {
-    login, password, onLoginInput, onPasswordInput, onLogin, errorLogin, errorPassword
+    login, password, onLoginInput, onPasswordInput, onLogin, errorLogin, errorPassword, setErrorLogin
   }
 }
